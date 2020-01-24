@@ -1,0 +1,12 @@
+#!/bin/sh
+
+fileList="$(ls ./example_data/ICC/input/*)"
+
+for file in $fileList; do
+input=$(basename $file)
+prefix=${input%????}
+output="./example_data/ICC/output/ICC_$prefix.mat"
+echo "Working on $input"
+Rscript ./functions/ccshcp_core_icc.R $file $output
+done
+

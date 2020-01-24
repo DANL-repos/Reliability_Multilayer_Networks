@@ -1,0 +1,17 @@
+The following scripts will compute multilayer network-based dynamic measures (i.e., flexibility, integration, and recruitment) and hierarchical ICC and simple ICC. Sepcifically:
+
+step1_compute_Aij.m: a matlab script converting time series to multilayer networks.
+step2_compute_SRep.m: a matlab script performing multilayer community detection using GenLouvain algorithm
+step3_compute_dynamic_measures.m: a matlab script computing flexibility, modular allegiance matrix, integration, and recruitment
+step4_hierachical_ICC.R: an R script compute hierarchical ICC using hierarchical linear mixed models to assess between-session and between-condition reliability in the same model 
+step5_compute_ICC: a bash script compute ICC using simple linear mixed model to assess between-session reliability 
+
+The functions called by these scripts are in the following folder: 
+1. "functions" which include either customized functions or functions downloaded from http://commdetect.weebly.com/
+2. "grinsted-wavelet-coherence-gus", a package downloaded from http://grinsted.github.io/wavelet-coherence/
+3. "GenLouvain2.1.2", a package downloaded from http://netwiki.amath.unc.edu/GenLouvain/GenLouvain
+
+Example input and output data were in folder "example_data". Example analysis starts with ROI time series in "time-series" folder. They were exracted from preprocessed fMRI data of one subject (one session and 4 tasks) from HBN-SSI dataset. 
+
+
+
