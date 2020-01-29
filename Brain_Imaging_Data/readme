@@ -3,7 +3,7 @@ Run the following scripts to compute multilayer network measures (i.e., flexibil
 step1_compute_Aij.m: a matlab script converting time series to multilayer networks.
 step2_compute_SRep.m: a matlab script performing multilayer community detection using GenLouvain algorithm. Input is generated from step1_compute_Aij.m
 step3_compute_dynamic_measures.m: a matlab script computing flexibility, modular allegiance matrix, integration, and recruitment. Input is generated from step2_compute_SRep.m
-run_hierachical_ICC.R: an R script compute hierarchical ICC using hierarchical linear mixed models to assess between-session and between-condition reliability in the same model.  
+run_hierachical_ICC.R: an R script compute hierarchical ICC using hierarchical linear mixed models to assess between-session and between-condition reliability in the same model.
 run_simple_ICC: a bash script compute ICC using simple linear mixed model to assess between-session reliability 
 
 The functions called by these scripts are in the following folder: 
