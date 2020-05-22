@@ -1,8 +1,8 @@
 Run the following scripts to compute multilayer network measures (i.e., flexibility, integration, and recruitment) and intra-class correlation coefficient (ICC). Example input and output data were in folder "example_data". Sepcifically:
 
-1. step1_compute_Aij.m: a matlab script converting time series to multilayer networks. Example analysis starts with one HBN-SSI subject's BOLD time series extracted from 200 ROIs (Craddock et al., 2011) from one session and 4 tasks.
-2. step2_compute_SRep.m: a matlab script performing multilayer community detection using GenLouvain algorithm. Input is generated from step1_compute_Aij.m
-3. step3_compute_dynamic_measures.m: a matlab script computing flexibility, modular allegiance matrix, integration, and recruitment. Input is generated from step2_compute_SRep.m
+1. 01_compute_Aij.m: a matlab script converting time series to multilayer networks. Example analysis starts with one HBN-SSI subject's BOLD time series extracted from 200 ROIs (Craddock et al., 2011) from one session and 4 tasks.
+2. 02_compute_SRep.m: a matlab script performing multilayer community detection using GenLouvain algorithm. Input is generated from step1_compute_Aij.m
+3. 03_compute_dynamic_measures.m: a matlab script computing flexibility, modular allegiance matrix, integration, and recruitment. Input is generated from step2_compute_SRep.m
 4. run_hierachical_ICC.R: an R script compute hierarchical ICC using hierarchical linear mixed models to assess between-session and between-condition reliability in the same model. Example input and output are in folder: Reliability_Multilayer_Networks/Brain_Imaging_Data/example_data/hierarchical_ICC/
 5. run_simple_ICC: a bash script compute ICC using simple linear mixed model to assess between-session reliability. Example input is in folder: Reliability_Multilayer_Networks/Brain_Imaging_Data/example_data/ICC/input/; Example output is in folder: Reliability_Multilayer_Networks/Brain_Imaging_Data/example_data/ICC/output/
 
